@@ -9,6 +9,11 @@ paraview.simple._DisableFirstRenderCameraReset()
 # setup views used in the visualization
 # ----------------------------------------------------------------
 
+### Add file path locations
+### These must be set to the directory containing the corresponding files prior to running in Paraview
+imgFilePath = '~/equirectangular.png'
+dataFilePath = '~/gistemp1200_GHCNv4_ERSSTv5.nc'
+
 # get the material library
 materialLibrary1 = GetMaterialLibrary()
 
@@ -53,10 +58,10 @@ SetActiveView(renderView1)
 # ----------------------------------------------------------------
 
 # create a new 'PNG Series Reader'
-equirectangularpng = PNGSeriesReader(registrationName='equirectangular.png', FileNames=['/geode2/home/u020/calvmill/Carbonate/Downloads/equirectangular.png'])
+equirectangularpng = PNGSeriesReader(registrationName='equirectangular.png', FileNames=[imgFilePath])
 
 # create a new 'NetCDF Reader'
-gistemp1200_GHCNv4_ERSSTv5nc = NetCDFReader(registrationName='gistemp1200_GHCNv4_ERSSTv5.nc', FileName=['/N/u/calvmill/Carbonate/gistemp1200_GHCNv4_ERSSTv5.nc'])
+gistemp1200_GHCNv4_ERSSTv5nc = NetCDFReader(registrationName='gistemp1200_GHCNv4_ERSSTv5.nc', FileName=[dataFilePath])
 gistemp1200_GHCNv4_ERSSTv5nc.Dimensions = '(lat, lon)'
 gistemp1200_GHCNv4_ERSSTv5nc.SphericalCoordinates = 0
 
