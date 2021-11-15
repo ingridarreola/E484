@@ -1,6 +1,7 @@
 # E484
+
 Repo for the class E484 - Scientific Visualization, for the final project
----
+
 
 ## Project Purpose
 Our team would like to explore the geographic and historic impacts of climate change will help to give context to this problem in order to improve the outcomes based on historic data and simulations. We are interested in metrics related to climate change that are tracked by several government agencies and various institutions, and are focusing on surface air temperature anomalies. The main purpose of this scientific visualization project will be to communicate the science of climate change to the general public.
