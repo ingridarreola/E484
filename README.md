@@ -71,3 +71,21 @@ Our main tool is Paraview and we are using the *NASA Goddard Institute for Space
 | Tuesday 12/7 | Final countdown, reviewing what is plausible to turn in for the final presentation (Cal & Ingrid) |
 | Wednesday 12/8 | Final presentation and dividing up the talking points at the CIB (Cal & Ingrid) |
 | Thursday 12/9 | Final Presentation (Cal & Ingrid) |
+
+## Project Presentation
+The final presentation will be at the CIB. It will be similar to the mid-point presentation, just have more details on the final output.
+
+[Collectome](https://collectome.rt.iu.edu/frontend/home) is a content-sharing platform to facilitate the building of a community of practice around tiled video walls or similar large-format displays. We can use this to display on the crystal wall at the CBI.
+
+This uses JSON to insert the content into grids.
+
+## Sketchfab
+Have to get the embed link
+``` 
+Click </> Embed button, then click on `Content` to seelct the options and select *Autostart* & maybe *Turntable Animation* for the World Map
+Copy the content of the *iFrame src=* the link after that 
+
+```
+
+## YouTube
+Follows the same instruction as *Sketchfab* where you grab the link after *iframe src=* The most useful features are **autoplay** & **loop** & **modest branding** & **el=0** Google *youtube url parameters* to review the parameters that you can edit on the video. 
