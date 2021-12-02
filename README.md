@@ -82,7 +82,8 @@ This uses JSON to insert the content into grids.
 ## Sketchfab
 Have to get the embed link
 ``` 
-Click </> Embed button, then click on `Content` to seelct the options and select *Autostart* & maybe *Turntable Animation* for the World Map
+Click </> Embed button 
+Then click on `Content` to seelct the options and select *Autostart* & maybe *Turntable Animation* for the World Map
 Copy the content of the *iFrame src=* the link after that 
 
 ```
