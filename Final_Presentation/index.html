@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 		<link rel="stylesheet" href="plugin/chalkboard/style.css">
 		<link rel="stylesheet" href="plugin/menu/menu.css">
@@ -19,12 +19,65 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-menu-title="Class Links">
-					<h1>Final Presentation</h1>
-					<ul>
-					  <li><a href="final.html">Class 1</a></li>
-					</ul>
-				  </section>
+				<section data-markdown id="title" data-menu-title="Final Presentation"> 
+					<script type="text/template">
+					### Climate Change <!-- .element: class="r-fit-text"-->
+
+					SICE E584 - Scientific Visualization - Fall 2021 <!-- .element: class="fragment" -->
+					
+					Ingrid A & Cal M <!-- .element: class="fragment" -->
+					
+					Indiana University <!-- .element:  class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="background" data-menu-title="Background"> 
+					<script type="text/template">
+					### Project Background <!-- .element: class="r-fit-text"-->
+					
+					Impact of climate change
+					
+					<br/>
+					
+					This project explores surface air temperature anomalies, including Land-Ocean temperature <!-- .element: class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="audience" data-menu-title="Audience">
+					<script type="text/template">
+					## Audience
+					
+					Communicate the rise in temperature anomalies to the general public <!-- .element: class="fragment" -->
+
+					<br/>
+					
+					Audience are people who generally follow climate change in news organizations like NPR or NYT <!-- .element: class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="data-source" data-menu-title="Data Source">
+					<script type="text/template">
+					# Data Source: GISS Surface Temperature Analysis (GISTEMP) <!-- .element: class="r-fit-text" -->
+					- NASA Goddard Institute for Space Studies <!-- .element: data-fragment-index="1" class="fragment"-->
+					- Metric = Land-Ocean Temperature Index, ERSSTv5, 1200km  smoothing <!-- .element: data-fragment-index="2" class="fragment"-->
+					- This data is an estimate of global surface temperature change <!-- .element: data-fragment-index="2" class="fragment"-->
+					- The baseline typically used includes 30 year periods, this base period is 1951-1980 <!-- .element: data-fragment-index="2" class="fragment"-->
+
+					</script>
+				</section>
+				<section data-markdown id="world-temp-2" data-menu-title="Background Image World Temperature Anomaly" data-background-image="https://github.com/ingridarreola/E484/blob/main/world_map_all_anomaly.png?raw=true"> 
+
+				</section>
+				<section data-markdown id="world-temp" data-menu-title="World Temperature Anomaly">
+					<script type="text/template">
+					<img data-src='https://github.com/ingridarreola/E484/blob/main/world_map_all_anomaly.png?raw=true' height="65%" width="45%" class="fragment" alt="visual encoding is a critical part of data visualization.">
+					<footer>Changes in Global Temperature Anomaly: 1880 to 2021</footer>
+					</script>
+				</section>
+				<section data-markdown id="world-temp-animation" data-menu-title="World Temperature Anomaly Animation">
+					<script type="text/template">
+					Changes in Global Temperature Anomaly: 1880 to 2021 <!-- .element: class="r-fit-text" -->
+					
+					<video data-src="https://github.com/ingridarreola/E484/blob/main/world_temp_all_no_border.mp4?raw=true" width="100%" controls></video>
+
+				</script>
 			</div>
 		</div>
 
