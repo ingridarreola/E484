@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 		<link rel="stylesheet" href="plugin/chalkboard/style.css">
 		<link rel="stylesheet" href="plugin/menu/menu.css">
+		<link rel="stylesheet" href="plugin/title-footer/title-footer.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -56,11 +57,11 @@
 					<script type="text/template">
 					## Objective
 						
-					Visualize the trends of temperature anomalies over time <!-- .element: class="fragment" -->
+					- Visualize the trends of temperature anomalies over time <!-- .element: class="fragment" -->
 							
-					Provide visualizations that show these trends as it pertains to regions and topographies, in 2D and 3D, to provide multiple representations of the phenomenon <!-- .element: class="fragment" -->
+					- Provide visualizations that show these trends as it pertains to regions and topographies, in 2D and 3D, to provide multiple representations of the phenomenon <!-- .element: class="fragment" -->
 
-					Audience will understand the trend across time and by location
+					- Audience will understand the trend across time and by location <!-- .element: class="fragment" -->
 					</script>
 				</section>
 				<section data-markdown id="data-source" data-menu-title="Data Source">
@@ -75,15 +76,21 @@
 				</section>
 				<section data-markdown id="data-format" data-menu-title="Data Format">
 					<script type="text/template">
-					<img data-src='https://github.com/ingridarreola/E484/blob/main/Presentation_Data_Format.jpg?raw=true' height="100%" width="100%" class="fragment" alt="this is a graph displaying the three dimensions of the data source"> <!-- .element: data-fragment-index="1" class="fragment"-->
-					This data set three dimensions: time, latitude, and longitude. Temperature is the three dimensional data variable.
+					<img data-src='https://github.com/ingridarreola/E484/blob/main/Presentation_Data_Format.jpg?raw=true' height="80%" width="80%" class="fragment" alt="this is a graph displaying the three dimensions of the data source"> <!-- .element: data-fragment-index="1" class="fragment"-->
+					<small> This data set three dimensions: time, latitude, and longitude. Temperature is the three dimensional data variable. </small> <!-- .element: data-fragment-index="2" class="fragment"-->
+					</script> https://github.com/ingridarreola/E484/blob/main/presentation_pipeline.jpg?raw=true
+				</section>
+				<section data-markdown id="data-pipeline" data-menu-title="Data Pipeline">
+					<script type="text/template">
+					<img data-src='https://github.com/ingridarreola/E484/blob/main/presentation_pipeline.jpg?raw=true' height="80%" width="80%" class="fragment" alt="this is a graph displaying the three dimensions of the data source"> <!-- .element: data-fragment-index="1" class="fragment"-->
+					<small> Steps to go from data to visual representation, icons are the software used in each step </small> <!-- .element: data-fragment-index="2" class="fragment"-->
 					</script>
 				</section>
 				<section data-markdown id="global-anomalies" data-menu-title="Global Temperature Anomaly">
 					<script type="text/template">
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/temp_anomaly_by_country.png?raw=true' height="100%" width="100% " class="fragment" alt="this is a graphs showing how the average global temperature has been rising from 1880 until 2021"> <!-- .element: data-fragment-index="1" class="fragment"-->
 
-					Each dot represents a country, dots located higher up are higher temperatures, dots located lower down are cooler temperatures  <!-- .element: data-fragment-index="2" class="fragment"-->
+					<small> Each dot represents a country, dots located higher up are higher temperatures, dots located lower down are cooler temperatures </small> <!-- .element: data-fragment-index="2" class="fragment"-->
 					</script>
 				</section>
 				<section data-markdown id="global-anomalies-dashboard" data-menu-title="Global Temperature Anomaly - Interactive Dashboard">
@@ -124,10 +131,10 @@
 				<section data-markdown id="average-global" data-menu-title="Average Global Temperature Anomaly">
 					<script type="text/template">
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/average_global_anomaly.png?raw=true' height="100%" width="100%" class="fragment" alt="this is a graphs showing how the average global temperature has been rising from 1880 until 2021"> <!-- .element: data-fragment-index="1" class="fragment"-->
-					An estimate of the *average* global surface temperature change, hotter averages as we get closer to present day across the globe <!-- .element: data-fragment-index="2" class="fragment"-->
+					<small> An estimate of the *average* global surface temperature change, hotter averages as we get closer to present day across the globe </small> <!-- .element: data-fragment-index="2" class="fragment"-->
 					</script>
 				</section>
-				<section data-markdown id="average-global-dashboard" data-menu-title="Average Global Temperature Anomaly - Interactive Dashboard">
+				<section id="average-global-dashboard" data-menu-title="Average Global Temperature Anomaly - Interactive Dashboard">
 					<iframe width="1200px" height="800px" src="https://public.tableau.com/views/AverageGlobalSurfaceTemperatureAnomaly/AverageGlobalTemperatureAnomaly?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"> </iframe>
 				</section>
 				<section data-markdown id="world-temp-2" data-menu-title="Background Image World Temperature Anomaly" data-background-image="https://github.com/ingridarreola/E484/blob/main/world_map_all_anomaly.png?raw=true"> 
@@ -148,8 +155,8 @@
 				</section>
 				<section data-markdown id="paraview-animation" data-menu-title="Paraview Animation">
 					<script type="text/template">					
-					<video data-autoplay src="https://github.com/ingridarreola/E484/blob/main/paraview_animation.mp4?raw=true" width="100%" controls></video>
-					ParaView Visualization 
+					<video data-autoplay src="https://github.com/ingridarreola/E484/blob/main/paraview_animation.mp4?raw=true" width="80%" height ="80%" controls></video>
+					<small> ParaView Visualization </small> 
 				</script>
 				</section>
 			</div>
@@ -166,6 +173,7 @@
 		<script src="plugin/menu/menu.js"></script>
 		<link rel="stylesheet" href="plugin/menu/menu.css">
 		<script src="plugin/chalkboard/plugin.js"></script>
+		<script src="plugin/title-footer/title-footer.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
