@@ -29,6 +29,8 @@
 					Ingrid A & Cal M <!-- .element: class="fragment" -->
 					
 					Indiana University <!-- .element:  class="fragment" -->
+
+					notes: Cal and Ingrid introduce themselves <br/> Cal to present the next few slides 
 					</script>
 				</section>
 				<section data-markdown id="background" data-menu-title="Background"> 
@@ -40,28 +42,33 @@
 					<br/>
 					
 					This project explores surface air temperature anomalies, including Land-Ocean temperature <!-- .element: class="fragment" -->
+					
+					notes: Cal presents here
 					</script>
 				</section>
 				<section data-markdown id="audience" data-menu-title="Audience">
 					<script type="text/template">
 					## Audience
+					Audience are people who generally follow stories about climate in news organizations like NPR or NYT 
 					
-					Communicate the rise in temperature anomalies to the general public <!-- .element: class="fragment" -->
-
 					<br/>
 					
-					Audience are people who generally follow climate change in news organizations like NPR or NYT <!-- .element: class="fragment" -->
+					Non-expert audience who has enough data literacy to read and understand charts, who is curious and may choose to dive deeper into topic after learning <!-- .element: class="fragment" -->
+
+					notes: Cal presents here
 					</script>
 				</section>
 				<section data-markdown id="objective" data-menu-title="Objective">
 					<script type="text/template">
 					## Objective
 						
-					- Visualize the trends of temperature anomalies over time <!-- .element: class="fragment" -->
+					- Visualize the trends of temperature anomalies over time and communicate this to the general public 
 							
 					- Provide visualizations that show these trends as it pertains to regions and topographies, in 2D and 3D, to provide multiple representations of the phenomenon <!-- .element: class="fragment" -->
 
 					- Audience will understand the trend across time and by location <!-- .element: class="fragment" -->
+
+					notes: Cal presents here
 
 					</script>
 				</section>
@@ -73,6 +80,7 @@
 					- This data is an estimate of global surface temperature change <!-- .element: data-fragment-index="2" class="fragment"-->
 					- The baseline typically used includes 30 year periods, this base period is 1951-1980 <!-- .element: data-fragment-index="2" class="fragment"-->
 
+					notes: Cal presents here
 					</script>
 				</section>
 				<section data-markdown id="data-format" data-menu-title="Data Format">
@@ -81,6 +89,8 @@
 
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/Presentation_Data_Format.jpg?raw=true' height="75%" width="80%" alt="this is a graph displaying the three dimensions of the data source"> <!-- .element: data-fragment-index="1" -->
 					<small> This data set three dimensions: time, latitude, and longitude. Temperature is the three dimensional data variable. </small> <!-- .element: data-fragment-index="2" class="fragment"-->
+
+					notes: Cal presents here
 					</script>
 				</section>
 				<section data-markdown id="data-pipeline" data-menu-title="Data Pipeline">
@@ -89,14 +99,23 @@
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/presentation_pipeline_transparent.jpg?raw=true' height="100%" width="100%" alt="this is a graph displaying the three dimensions of the data source">  
 					<small> Steps to go from data to visual representation, icons are the software used in each step </small> 
 					<small> The data is structure in a 5 X 5 degree structured curvelinear grid.  </small> <!-- .element: data-fragment-index="2" class="fragment"-->
+
+					notes: *Ingrid presents here* This shows the steps we took to go from data to visual representation. Each icon is the software that was used in that step. <br/> We spent the majority of our time in the data cleaning and data transformation step. We began by resampling the data to a yearly frequency, since we already had a large volume of data to work with. We used xarray to translate the netCDF file and did analysis with pandas, matplotlip, and cartopy. This was very helpful as it illustrated the general trends of the dataset and helped us determine what to focus on inside of Paraview. **Cal talks about ParaView** We had a lot of technical difficulties inside of ParaView and decided to represent the dataset in different visualizations and with different tools. 
 					</script>
 				</section>
 				<section id="global-anomalies-dashboard" data-menu-title="Global Temperature Anomaly - Interactive Dashboard">
 					<div class='tableauPlaceholder' id='viz1639002952519' style='position: relative'><noscript><a href='#'><img alt='Global Temperature Anomaly ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalSurfaceTemperatureAnomaly&#47;GlobalTemperatureAnomaly&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlobalSurfaceTemperatureAnomaly&#47;GlobalTemperatureAnomaly' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalSurfaceTemperatureAnomaly&#47;GlobalTemperatureAnomaly&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1639002952519');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 					
+					<aside class="notes"> 
+						This visualization shows the global temperature anomaly across time. Each dot is a unique location in the world. What we can see here is that there is a lot of variability with anomalies occuring throughout our planet. The other visible trend is that we are moving up as we get closer to present day. This indicates that we are getting anomalies that are warmer. This was created with Tableau.
+					</aside>
 				</section>
 				<section id="average-global-dashboard" data-menu-title="Average Global Temperature Anomaly - Interactive Dashboard">
 					<div class='tableauPlaceholder' id='viz1639003030982' style='position: relative'><noscript><a href='#'><img alt='Average Global Temperature Anomaly ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageGlobalSurfaceTemperatureAnomaly&#47;AverageGlobalTemperatureAnomaly&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AverageGlobalSurfaceTemperatureAnomaly&#47;AverageGlobalTemperatureAnomaly' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageGlobalSurfaceTemperatureAnomaly&#47;AverageGlobalTemperatureAnomaly&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1639003030982');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+				
+					<aside class="notes"> 
+						This visualization shows the <strong>average</strong> global temperature anomaly across time. Now we're looking at the average anomaly for our planet, and we can see that the trend is rising towards warmer temperatures as we get closer to present day. In 1880 the average temp anomaly was -0.206, in 2020 it rose 1.246, and 2021 data is not complete however it is included in the graph. This was created with Tableau.
+					</aside>
 				</section>
 				<section data-markdown id="world-temp-2" data-menu-title="Background Image World Temperature Anomaly" data-background-image="https://github.com/ingridarreola/E484/blob/main/world_map_all_anomaly.png?raw=true"> 
 
@@ -104,14 +123,18 @@
 				<section data-markdown id="world-temp" data-menu-title="World Temperature Anomaly">
 					<script type="text/template">
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/world_map_all_anomaly.png?raw=true' height="65%" width="65%" alt="this is a panel of graphs showing how global temperature has been rising from 1880 until 2021">
-					<small>Changes in Global Temperature Anomaly: 1880 to 2021</small>
+					<small>Changes in Average Global Temperature Anomaly: 1880 to 2021</small>
+
+					notes: This visualization is displaying the *Changes in Average Global Temperature Anomaly: 1880 to 2021* where each panel is a year. The arrow to the right is showing a color scale, the deepest red is higher temperature and the darkest blue is a cooler temperature. This view shows a different aspect to the dataset because it allows us to view all of it an once and see the progression towards warmer temperature. This was created with Python, matplotlib and shows a **standard rectilinear projection**.
 					</script>
 				</section>
 				<section data-markdown id="world-temp-animation" data-menu-title="World Temperature Anomaly Animation">
 					<script type="text/template">
-					Changes in Global Temperature Anomaly: 1881 to 2021 <!-- .element: class="r-fit-text" -->
+					Changes in Average Global Temperature Anomaly: 1881 to 2021 <!-- .element: class="r-fit-text" -->
 					
 					<video data-autoplay src="https://github.com/ingridarreola/E484/blob/main/world_temp_all_years.mp4?raw=true" width="100%" controls></video>
+
+					notes: This visualization is displaying the *Changes in Average Global Temperature Anomaly: 1881 to 2021* by year. This was created with Python, using matplotlib and cartopy to create a **PlateCarree projection**. We used a bicubic interploation to smooth the image and added country boundaries. Finally we created an animation which displays the change on a map.
 				</script>
 				</section>
 				<section data-markdown id="paraview-animation" data-menu-title="Paraview Animation">
@@ -124,6 +147,8 @@
 					<script type="text/template">					
 					<iframe data-src="https://sketchfab.com/models/1a382b5c7f3f4b1ba67b5e98d7489559/embed?autospin=0.2&amp ;autostart=1&amp ;ui_controls=1&amp ;ui_infos=1&amp ;ui_inspector=1&amp ;ui_stop=1&amp ;ui_watermark=1&amp ; ui_watermark_link=1" width ="900px" height="900px" data-preload> </iframe>
 					<small> ParaView visualization rendered in Sketchfab </small> 
+
+					notes: Cal presents here.
 				</script>
 				</section>
 				<section data-markdown id="challenge" data-menu-title="Data Challenges">
@@ -135,16 +160,20 @@
 					- Data projection (sphere) and export to sketchfab 
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/data_challenge.png?raw=true' height="35%" width="35%" alt="this is a picture of the issues we ran into when we tried to export to sketchfab"> 
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/error.PNG?raw=true' height="45%" width="45%" alt="this is a picture of the issues we ran into when trying to install the various Python libraries">
+
+					notes: Ingrid and Cal present here. <br/>
 					</script>
 				</section>
 				<section data-markdown id="insight" data-menu-title="Data Insights">
 					<script type="text/template">
 					## Data Insights 
-					- Multiple representations of data
 					- Wide range of temperature anomaly by location
 					- There have always been temperature anomalies, however its trending **warmer** and it is an impact visible at a **global level**
 					- Blend of scientific viz and info viz (pros/cons) 
+					- Multiple representations of data
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/presentation_tools.png?raw=true' height="45%" width="45%" class="fragment" alt="picture of the tools used throughout the project"> 
+
+					notes: Ingrid and Cal present here. <br/> We learned a lot on this project. There is a wide range of temperature anomaly by location, it's a spectrum that varies each year. While there have always been temeprature anomalies, it is trending warmer and we see this at a global level. We chose to represent this via different visualizations. Each one provides a different perspective on the dataset.
 					</script>
 				</section>
 				<section>
