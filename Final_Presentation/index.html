@@ -62,6 +62,7 @@
 					- Provide visualizations that show these trends as it pertains to regions and topographies, in 2D and 3D, to provide multiple representations of the phenomenon <!-- .element: class="fragment" -->
 
 					- Audience will understand the trend across time and by location <!-- .element: class="fragment" -->
+
 					</script>
 				</section>
 				<section data-markdown id="data-source" data-menu-title="Data Source">
@@ -79,6 +80,12 @@
 					<img data-src='https://github.com/ingridarreola/E484/blob/main/Presentation_Data_Format.jpg?raw=true' height="80%" width="80%" class="fragment" alt="this is a graph displaying the three dimensions of the data source"> <!-- .element: data-fragment-index="1" class="fragment"-->
 					<small> This data set three dimensions: time, latitude, and longitude. Temperature is the three dimensional data variable. </small> <!-- .element: data-fragment-index="2" class="fragment"-->
 					</script> https://github.com/ingridarreola/E484/blob/main/presentation_pipeline.jpg?raw=true
+				</section>
+				<section data-markdown id="data-format" data-menu-title="Data Format">
+					<script type="text/template">
+					<img data-src='https://github.com/ingridarreola/E484/blob/main/Presentation_Data_Format.jpg?raw=true' height="80%" width="80%" class="fragment" alt="this is a graph displaying the three dimensions of the data source"> <!-- .element: data-fragment-index="1" class="fragment"-->
+					<small> The data is structure in a 5 X 5 degree structured curvelinear grid.  </small> <!-- .element: data-fragment-index="2" class="fragment"-->
+					<small> Python package xarray was used to aggregate the data by mean temperature anomaly per location.  </small> <!-- .element: data-fragment-index="2" class="fragment"-->
 				</section>
 				<section data-markdown id="data-pipeline" data-menu-title="Data Pipeline">
 					<script type="text/template">
